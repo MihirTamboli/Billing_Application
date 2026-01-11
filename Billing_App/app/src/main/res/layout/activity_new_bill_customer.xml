@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_bill_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:padding="15dp"
+    tools:context="com.TYCO.My_Project.Billing_Application.NewBillCustomerActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/customer_name_label"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/customer_name_value"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/phone_number_value"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:hint="10-digit phone number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="addCustomer"
+        android:text="@string/add_customer_next_label"
+        android:background="#5dade2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
